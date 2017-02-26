@@ -27,7 +27,7 @@ class ViewController: NSViewController {
     func addAnimations() {
        self.horse.translatesAutoresizingMaskIntoConstraints = false
         NSAnimationContext.runAnimationGroup({ (context) in
-            self.horse.removeConstraints([top,trailing])
+            self.horse.removeConstraints([self.top,self.trailing])
             //动画间隔
             context.duration = 2
             //动画运动模式，easeOut，缓出
